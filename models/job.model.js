@@ -16,6 +16,10 @@ const jobSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    experienceLevel: {
+        type: Number,
+        required: true
+    },
     location: {
         type: String,
         required: true
@@ -24,7 +28,7 @@ const jobSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    positoin: {
+    position: {
         type: Number,
         required: true
     },
@@ -47,4 +51,4 @@ const jobSchema = new mongoose.Schema({
 
 }, { timestamps: true })
 
-export const job = mongoose.model("job", jobSchema)
+export const Job = mongoose.model("Job", jobSchema)
